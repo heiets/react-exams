@@ -57,16 +57,16 @@ $grey: #edeef0;
       background-color: $grey;
       font-family: Roboto;
    }
-.wrap {
-   min-height: 300px;
-   max-width: 800px;
-   margin: 50px auto;
-   background-color: white;
-   display: flex;
-   flex-direction: row;
-   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
-}
-.wrap__img {
+   .wrap {
+      min-height: 300px;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
+   }
+   .wrap__img {
    //flex-grow: 1;
    //background: url('../img/1.jpg') no-repeat;
    //background-size: cover;
@@ -88,7 +88,7 @@ $grey: #edeef0;
    padding-left: 10px;
    padding-right: 10px;
    &:hover {
-   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+      box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
    }
 }
 .single {
@@ -175,4 +175,36 @@ $grey: #edeef0;
 }
 .sec {
    flex: 1;
+}
+@media only screen and (max-width: 500px) {
+   .GridItem {
+      font-size: 15px;
+   }
+   .nametitle {
+      font-size: 15px;
+   }
+   .datetitle {
+      font-size: 10px;
+   }
+   .timetitle {
+      font-size: 10px;
+   }
+   .cabtitle {
+      font-size: 10px;
+   }
+   .name {
+      font-size: 15px;
+   }
+   .date {
+      font-size: 10px;
+   }
+   .time {
+      font-size: 10px;
+   }
+   .cab {
+      font-size: 10px;
+   }
+   .timer {
+      font-size: 30px;
+   }
 }

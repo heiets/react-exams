@@ -22,6 +22,7 @@ export default class Timer extends React.Component {
 		let tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
 		let tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
 		let thour=today%24; today=Math.floor(today/24);
+		
 		this.setState({
 			stateToday: today,
 			stateSec: tsec,
