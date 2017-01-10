@@ -43,7 +43,7 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<div>
-			<Grid data={ exList } setExFromGrid={ this.setExInApp.bind(this) }/>
+			<Grid data={ exList } setExFromGrid={ this.setExInApp.bind(this) } dataId={ this.state.id }/>
 			<section class="wrap">
 			<div class="wrap__img"></div>
 			<div className="wrap__text">

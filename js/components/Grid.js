@@ -11,8 +11,8 @@ export default class Grid extends React.Component {
 		let arr = [];
 		let items = this.props.data.forEach( (v, i) => {
 			arr.push(
-				<div key={i} onClick={this.setEx.bind(this)} data-id={i} className="GridItem" >
-				<GridItem name={this.props.data[i].name } />
+				<div key={i} onClick={this.setEx.bind(this)} data-id={i} className={this.props.dataId == i ? "GridItem active" : "GridItem"} >
+				<GridItem name={this.props.data[i].name } id={i}/>
 				</div>
 				)
 		});
