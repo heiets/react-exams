@@ -13,6 +13,8 @@ export default class Timer extends React.Component {
 	}
 	componentDidMount() {
 		this.time();
+		let self = this;
+		let interval = setInterval( () => self.time(), 1000);
 	}
 	time() {
 		let timeend= new Date(`Jan ${this.props.data[this.props.dataId].date.substr(0,2)} 2017 12:15:00`);
@@ -45,8 +47,6 @@ export default class Timer extends React.Component {
 		}
 	}
 	render() {
-		let self = this;
-		let interval = setInterval( () => self.time(), 1000);
 		return (
 			<div className="timer">
 			<div className="today">
