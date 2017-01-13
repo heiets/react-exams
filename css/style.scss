@@ -62,8 +62,8 @@ $grey: #edeef0;
       max-width: 800px;
       margin: 50px auto;
       background-color: white;
-      display: flex;
-      flex-direction: row;
+      //display: flex;
+      //flex-direction: row;
       box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.25);
    }
    .wrap__text {
@@ -160,6 +160,7 @@ $grey: #edeef0;
       display: flex;
       text-align: center;
       font-size: 60px;
+      padding-bottom: 40px;
    }
    .today {
       flex: 1;
@@ -175,6 +176,12 @@ $grey: #edeef0;
    }
    .active {
       box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+   }
+   .author {
+      border-top: 1px solid $grey;
+      text-align: center;
+      padding-bottom: 15px;
+      padding-top: 15px;
    }
    @media only screen and (max-width: 500px) {
       .GridItem {

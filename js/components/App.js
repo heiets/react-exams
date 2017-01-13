@@ -50,6 +50,7 @@ export default class App extends React.Component {
 			<Single data={ exList } dataId={ this.state.id }/>
 			<Timer data={ exList } dataId={ this.state.id }/>
 			</div>
+			<div className="author">Created by <a href="https://vk.com/o.heiets" target="_blank">Oleksandr Heiets</a></div>
 			</section>
 			</div>
 			);
