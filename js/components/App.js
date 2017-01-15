@@ -6,25 +6,25 @@ import Grid from "./Grid";
 
 
 let exList = [
-{
-	name: 'Технології комп проектування',
-	date: '11.01.17',
-	cab: '422',
-	time: '12.15'
-},
-{
-	name: 'Сист штучного інтелекту',
-	date: '16.01.17',
-	cab: '422',
-	time: '12.15'
-},
-{
-	name: 'Сист обробл екон інформ',
-	date: '20.01.17',
-	cab: '421',
-	time: '12.15'
-}
-]
+	{
+		name: 'Технології комп проектування',
+		date: '11.01.17',
+		cab: '422',
+		time: '12.15'
+	},
+	{
+		name: 'Сист штучного інтелекту',
+		date: '16.01.17',
+		cab: '422',
+		time: '12.15'
+	},
+	{
+		name: 'Сист обробл екон інформ',
+		date: '20.01.17',
+		cab: '421',
+		time: '12.15'
+	}
+];
 export default class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -43,17 +43,17 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<div>
-			<Grid data={ exList } setExFromGrid={ this.setExInApp.bind(this) } dataId={ this.state.id }/>
-			<section class="wrap">
-			<div class="wrap__img"></div>
-			<div className="wrap__text">
-			<Single data={ exList } dataId={ this.state.id }/>
-			<Timer data={ exList } dataId={ this.state.id }/>
+				<Grid data={ exList } setExFromGrid={ this.setExInApp.bind(this) } dataId={ this.state.id }/>
+				<section className="wrap">
+					<div className="wrap__img"></div>
+					<div className="wrap__text">
+						<Single data={ exList } dataId={ this.state.id }/>
+						<Timer data={ exList } dataId={ this.state.id }/>
+					</div>
+					<div className="author">Created by <a href="https://vk.com/o.heiets" target="_blank">Oleksandr Heiets</a></div>
+				</section>
 			</div>
-			<div className="author">Created by <a href="https://vk.com/o.heiets" target="_blank">Oleksandr Heiets</a></div>
-			</section>
-			</div>
-			);
+		);
 	}
 }
 
